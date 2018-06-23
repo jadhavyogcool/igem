@@ -1,0 +1,463 @@
+/* Loads custom fonts */
+
+@font-face {
+	font-family: "Bebas Neue";
+	src: url('fonts/BebasNeue.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "Avenir Condensed";
+	src: url('fonts/AvenirCondensed.otf') format('opentype');
+}
+
+
+/* Styles navbar, including active link */
+
+nav {
+	border: 1.5px solid black;
+	border-left: none;
+	border-right: none;
+	font-family: "Bebas Neue", sans-serif;
+	background: white;
+}
+
+.nav-link {
+	color: black;
+	margin: 20px;
+	transition: color 0.5s;
+}
+
+.nav-link:hover {
+	color: #C03F2E;
+}
+
+.nav-link.active {
+	color: #AB242E;
+}
+
+.navbar-nav {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 25px;
+	color: black;
+}
+
+.navbar {
+	padding: 0px;
+}
+
+
+/* Accounts for fixed navbar */
+
+body {
+	padding-top: 105px;
+}
+
+
+/* Overrides default properties for Bootstrap collapse and navbar brand */
+
+.navbar-brand {
+	padding: 0px;
+	padding-bottom: 1.5px;
+	margin-left: 100px;
+}
+
+.collapse {
+	margin-left: 50px;
+}
+
+
+/* Multi-level dropdown */
+
+.dropdown-submenu {
+	position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	top: 0px;
+	left: 100%;
+}
+
+
+/* Small logo in collapsed navbar */
+
+#logosmall {
+	margin-top: 20px;
+	border: 2px outset gray;
+	border-radius: 5px;
+}
+
+#logosmall:hover {
+	background-color: gray;
+}
+
+
+/* Dropdowns */
+
+.dropdown-menu,
+dropdown-submenu {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+
+/* Multiple level heading scheme */
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Bebas Neue";
+	font-size: 48px;
+	border-bottom: 3px solid #AB242E;
+	padding: 5px;
+	padding-left: 10px;
+	margin-top: 5px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 36px;
+	border: none;
+}
+
+h4 {
+	font-size: 30px;
+	border: none;
+}
+
+
+/* Styles paragraph text and hyperlinks */
+
+p {
+	font-family: "Avenir Condensed", sans-serif;
+	font-size: 18px;
+	padding-left: 10px;
+}
+
+.container p>a,
+.col-xl-10 a {
+	color: #AA242E;
+	text-decoration: underline;
+}
+
+
+/* Tables */
+
+table {
+	border-collapse: collapse;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.tblhead {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+td.pic {
+	text-align: center;
+}
+
+
+/*Manuscript images */
+
+.col-xl-10>img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 60vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.math {
+	width: auto;
+	max-width: 50%;
+	height: auto;
+}
+
+img.span {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 100vh;
+}
+
+img.protcon {
+	height: auto;
+	width: 30%;
+}
+
+td>img {
+	width: 200px;
+	height: auto;
+	padding: 5px;
+}
+
+img.long {
+	max-height: 200vh;
+	width: 60%;
+}
+
+
+/* Videos */
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 35px;
+	height: 0;
+	overflow: hidden;
+	background: white;
+}
+
+.video iframe,
+.video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Image on landing page */
+
+#heroimage {
+	width: 80%;
+}
+
+
+/* Styles lists in sidebar navigation */
+
+.sidenav {
+	position: fixed;
+}
+
+.sidenav ul {
+	font-family: "Avenir Condensed", sans-serif;
+	margin-left: 8px;
+	padding-left: 8px;
+	list-style-image: url('../images/bullet.png');
+}
+
+.sidenav a {
+	color: #AA242E;
+}
+
+.sidenavtracks {
+	border-left: solid 2px black;
+	border-right: solid 2px black;
+	border-bottom: solid 2px black;
+}
+
+
+/* Sets relative indentation for each new list level */
+
+ul li ul {
+	margin-left: 4px;
+}
+
+
+/* Styles other lists */
+
+ul {
+	font-family: "Avenir Condensed", sans-serif;
+	font-size: 18px;
+	list-style-image: url('../images/bullet.png');
+}
+
+ol {
+	font-family: "Avenir Condensed", sans-serif;
+	font-size: 18px;
+}
+
+
+/* Captions */
+
+.caption {
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+/* Toggle buttons */
+
+.toggle {
+	margin: 15px auto;
+	background-color: white;
+	border: 1.5 px solid black;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	display: block;
+	font-family: 'Avenir Condensed';
+}
+
+.toggle:hover {
+	background-color: #AA242E;
+	color: white;
+}
+
+.hits {
+	display: none;
+}
+
+
+/* Formats active sidebar link */
+
+.scroll.active {
+	font-weight: bold;
+}
+
+
+/* Styles page footer */
+
+.footer {
+	padding: 10px;
+	float: bottom;
+}
+
+/* Project flowchart */
+
+g.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.8s linear;
+}
+
+g.showing:hover+g.hidden {
+	visibility: visible;
+  	opacity: 1;
+}
+
+
+/* Interactivity on linked svg files */
+
+a g polygon {
+	fill: #C1272D;
+	fill-opacity: 0.0;
+	transition: 0.6s fill-opacity;
+}
+
+a g text {
+	font-size: 28px;
+	transition: 0.6s font-size;
+}
+
+svg a g:hover polygon {
+	fill-opacity: 0.6;
+}
+
+svg a g:hover text {
+	font-size: 35px;
+	fill: #C1272D;
+}
+
+svg.landing {
+	padding: 100px 0px;
+}
+
+#easter-egg {
+	transition: 0.6s fill-opacity;
+}
+
+#easter-egg:hover {
+	fill-opacity: 0.2;
+}
+
+
+/* Interactivity for tables */
+
+td.sol {
+	text-align: center;
+	font-family: 'Avenir Condensed';
+	cursor: default;
+}
+
+td.sol:hover {
+	background-color: #AA242E;
+}
+
+.plotholder {
+	width: 100%;
+	height: 70vh;
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/* Team page */
+
+.gutter {
+	margin-top: 20%;
+}
+
+#team {
+	height: 80vh;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#leelab {
+	width: 75%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+
+/* Sponsors page */
+
+#sponsors {
+	padding-right: 10%;
+}
+
+
+/* Media queries overriding Bootstrap default */
+
+@media (max-width:768px) {
+	.navbar-brand {
+		margin-left: -100px;
+	}
+	.nav-link {
+		margin: 0px;
+		margin-left: -50px;
+	}
+}
+
+
+/* Activates dropdown on hover, instead of click */
+
+@media (min-width: 768px) {
+	ul.navbar-nav>li.dropdown:hover>.dropdown-menu {
+		display: block;
+	}
+}
+
+
+/* Hides side navigation on smaller screens */
+
+@media (max-width:1200px) {
+	.sidenavtracks {
+		display: none;
+	}
+}
